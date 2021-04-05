@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style.css">
+  <nav id="navbar">
+    <header>PHP Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li>
+        <a class="nav-link" href="#What_you_should_already_know"
+          >What you should already know</a
+        >
+      </li>
+      <li>
+        <a class="nav-link" href="#What_is_PHP">What is PHP</a>
+      </li>
+      <li><a class="nav-link" href="#PHP_Syntax">PHP Syntax</a></li>
+      <li><a class="nav-link" href="#PHP_Variables">PHP Variables</a></li>
+      <li>
+        <a class="nav-link" href="#Declaring_PHP_variables">Declaring PHP variables</a>
+      </li>
+      <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+      <li><a class="nav-link" href="#PHP_data_types">PHP Data Types</a></li>
+      <li><a class="nav-link" href="#PHP_functions">PHP Functions</a></li>
+      <li><a class="nav-link" href="#PHP_if...else_statement">PHP if...else Statement</a></li>
+      <li>
+        <a class="nav-link" href="#PHP_arrays">PHP Arrays</a>
+      </li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>
+        The PHP Hypertext Preprocessor (PHP) is a programming language that allows web developers to create dynamic content that interacts with databases. PHP is basically used for developing web based software applications. This tutorial helps you to build your base with PHP.
+        </p>
+
+        <p>
+          PHP started out as a small open source project that evolved as more and more people found out how useful it was. Rasmus Lerdorf unleashed the first version of PHP way back in 1994.
+        </p>
+        <ul>
+          <li>
+            PHP is a server side scripting language that is embedded in HTML. It is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.
+          </li>
+          <li>
+           It is integrated with a number of popular databases, including MySQL, PostgreSQL, Oracle, Sybase, Informix, and Microsoft SQL Server.
+          </li>
+          <li>PHP is pleasingly zippy in its execution, especially when compiled as an Apache module on the Unix side. The MySQL server, once started, executes even very complex queries with huge result sets in record-setting time.</li>
+          <li>PHP supports a large number of major protocols such as POP3, IMAP, and LDAP. PHP4 added support for Java and distributed object architectures (COM and CORBA), making n-tier development a possibility for the first time.</li>
+          <li>PHP Syntax is C-Like.</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="What_you_should_already_know">
+      <header>What you should already know</header>
+      <article>
+
+        <ul>
+          <li>
+            Before you start learning PHP you need a basic understanding of HTML. If you already have it, great. If not there are plenty of HTML articles and tutorials to help you. When you know both languages, you can switch between PHP and HTML right in the same document. You can even run PHP from an HTML file.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="What_is_PHP">
+      <header>What is PHP</header>
+      <li>PHP is an acronym for "PHP: Hypertext Preprocessor"</li>
+      <li>PHP is a widely-used, open source scripting language</li>
+      <li>PHP scripts are executed on the server</li>
+      <li>PHP is free to download and use</li>
+      <header>What Can PHP Do?</header>
+      <article>
+        <li>PHP can generate dynamic page content</li>
+        <li>PHP can create, open, read, write, delete, and close files on the server</li>
+        <li>PHP can collect form data</li>
+        <li>PHP can send and receive cookies</li>
+        <li>PHP can add, delete, modify data in your database</li>
+        <li>PHP can be used to control user-access</li>
+        <li>PHP can encrypt data</li>
+        <p>
+          With PHP you are not limited to output HTML. You can output images, PDF files, and even Flash movies. You can also output any text, such as XHTML and XML.
+        </p>
+
+      </article>
+    </section>
+    <section class="main-section" id="PHP_Syntax">
+      <header>PHP Syntax</header>
+      <article>
+        A PHP script is executed on the server, and the plain HTML result is sent back to the browser.
+
+        A PHP script can be placed anywhere in the document.
+
+        A PHP script starts with <?php and ends with ?>:
+        <code>?php 
+          // PHP code goes here
+          ?>
+        </code>
+
+        The default file extension for PHP files is ".php". A PHP file normally contains HTML tags, and some PHP scripting code.
+      </article>
+    </section>
+    <section class="main-section" id="PHP_Variables">
+      <header>PHP Variables</header>
+      <p>
+        A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+      </p>
+      <p>Rules for PHP variables:</p>
+      <ul>
+          <li>A variable starts with the $ sign, followed by the name of the variable</li>
+          <li>A variable name must start with a letter or the underscore character</li>
+          <li>A variable name cannot start with a number</li>
+          <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+          <li>Variable names are case-sensitive ($age and $AGE are two different variables)</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Declaring_PHP_variables">
+      <header>Declaring PHP Variables</header>
+      <article>
+        In PHP, a variable starts with the $ sign, followed by the name of the variable:
+          <code>?php
+          $txt = "Hello world!";
+          $x = 5;
+          $y = 10.5;
+          ?></code> After the execution of the statements above, the variable $txt will hold the value Hello world!, the variable $x will hold the value 5, and the variable $y will hold the value 10.5.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Variable_scope">
+      <header>Variable scope</header>
+      <article>
+        <p>
+          In PHP, variables can be declared anywhere in the script. The scope of a variable is the part of the script where the variable can be referenced/used.
+        </p>
+        <p>
+          PHP has three different variable scopes:
+        </p>
+        <ul>
+          <li>local</li>
+          <li>global</li>
+          <li>static</li>
+        </ul>
+        <h2>Global and Local Scope</h2>
+        <p>A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function.</p>
+        <p>A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function.</p>
+        <h2>Static scope</h2>
+        <p>Normally, when a function is completed/executed, all of its variables are deleted. However, sometimes we want a local variable NOT to be deleted. We need it for a further job. To do this, use the static keyword when you first declare the variable:</p>
+        <p>Then, each time the function is called, that variable will still have the information it contained from the last time the function was called.</p>
+      </article>
+    </section>
+    <section class="main-section" id="PHP_data_types">
+      <header>PHP Data Types</header>
+      <article>
+        <p>
+          Variables can store data of different types, and different data types can do different things.
+        </p>
+        <p>
+          PHP supports the following data types:
+        </p>
+        <ul>
+          <li>String</li>
+          <li>Integer</li>
+          <li>Float (floating point numbers - also called double)</li>
+          <li>Boolean</li>
+          <li>Array</li>
+          <li>Object</li>
+          <li>NULL</li>
+          <li>Resource</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="PHP_functions">
+      <header>PHP Functions</header>
+      <article>
+        <p>
+          The real power of PHP comes from its functions.
+          PHP has more than 1000 built-in functions, and in addition you can create your own custom functions.
+        </p>
+        <h2>PHP Built-in Functions</h2>
+        <p>
+          PHP has over 1000 built-in functions that can be called directly, from within a script, to perform a specific task.
+        </p>
+        <h2>PHP User Defined Functions</h2>
+        <p>
+          Besides the built-in PHP functions, it is possible to create your own functions.
+        </p>
+        <ul>
+          <li>A function is a block of statements that can be used repeatedly in a program.</li>
+          <li>A function will not execute automatically when a page loads.</li>
+          <li>A function will be executed by a call to the function.</li>
+        </ul>
+
+        <p>
+          Create a User Defined Function in PHP
+        </p>
+        <p>A user-defined function declaration starts with the word function:</p>
+
+        <code
+                  >function functionName() {
+          code to be executed;
+        } </code>
+      </article>
+    </section>
+    <section class="main-section" id="PHP_if...else_statement">
+      <header>PHP if...else Statement</header>
+      <article>
+        <p>Conditional statements are used to perform different actions based on different conditions.</p>
+        <h2>PHP Conditional Statements</h2>
+        <p>Very often when you write code, you want to perform different actions for different conditions. You can use conditional statements in your code to do this.
+
+        In PHP we have the following conditional statements:</p>
+        <ul>
+          <li>if statement - executes some code if one condition is true</li>
+          <li>if...else statement - executes some code if a condition is true and another code if that condition is false</li>
+          <li>if...elseif...else statement - executes different codes for more than two conditions</li>
+          <li>switch statement - selects one of many blocks of code to be executed</li>
+        </ul>
+        <h2>PHP - The if Statement</h2>
+          <p>The if statement executes some code if one condition is true.</p>
+          <h3>Syntax</h3>
+          <code>if (condition) {
+            code to be executed if condition is true;
+          }</code>
+        <h2>PHP - The if...else Statement</h2>
+        <p>The if...else statement executes some code if a condition is true and another code if that condition is false.</p>
+        <h3>Syntax</h3>
+        <code>if (condition) {
+          code to be executed if condition is true;
+        } else {
+          code to be executed if condition is false;
+        }</code>
+
+        <h2>PHP - The if...elseif...else Statement</h2>
+        <p>The if...elseif...else statement executes different codes for more than two conditions.</p>
+        <h3>Syntax</h3>
+        <code>if (condition) {
+          code to be executed if this condition is true;
+        } elseif (condition) {
+          code to be executed if first condition is false and this condition is true;
+        } else {
+          code to be executed if all conditions are false;
+        }</code>
+      </article>
+    </section>
+    <section class="main-section" id="PHP_arrays">
+      <header>PHP Arrays</header>
+      <article>
+        An array stores multiple values in one single variable:
+        <code> ?php
+        $cars = array("Volvo", "BMW", "Toyota");
+        echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+        ?></code>
+        <h2>What is an Array?</h2>
+        <p>An array is a special variable, which can hold more than one value at a time.
+
+        If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+        <code>$cars1 = "Volvo";
+        $cars2 = "BMW";
+        $cars3 = "Toyota";</code>
+        <p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+        <p>The solution is to create an array!</p>
+        <p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+
+        <h2>Create an Array in PHP</h2>
+        <p>In PHP, the array() function is used to create an array:</p>
+        <code>array();</code>
+        <p>In PHP, there are three types of arrays:</p>
+        <ul>
+          <li>Indexed arrays - Arrays with a numeric index</li>
+          <li>Associative arrays - Arrays with named keys</li>
+          <li>Multidimensional arrays - Arrays containing one or more arrays</li>
+        </ul>
+      </article>
+
+    </section>
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article>
+        <ul>
+          <li>
+            All the documentation in this page is taken from
+            <a
+              href="https://www.w3schools.com/php/default.asp"
+              target="_blank"
+              >w3schools</a
+            >
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</html>
